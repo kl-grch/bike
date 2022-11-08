@@ -1,0 +1,97 @@
+.catalog {
+    margin: 81px 972px 81px 102px;
+    &__tabs {
+        display: flex;        
+    }
+    &__content {
+        padding: 40px 60px;
+        background-color: $white;
+        border-radius: 0px 20px 20px 20px;
+        display: none;
+        &_active {
+            display: block;
+        }
+        &#woman {
+            li {
+                list-style-type: none;
+                list-style-image: url("/icons/fi-rr-bike.svg");
+            }
+        }
+    }
+    &__about {
+        position: relative;
+        &-img {
+            position: absolute;
+            left: -127px;
+            img {
+                width: 358px;
+            }
+        }
+        &-descr {
+            width: 425px;
+            margin-left: 321px;
+        }
+        &-title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 150%;
+        }
+        &-descriptional {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: $text;
+            &_one {
+                margin-top: 20px;
+                margin-bottom: 16px;
+            }
+        }
+    }
+    &__characteristics {
+        margin-bottom: 40px;
+        &-title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;            
+            color: $main;
+            margin-bottom: 20px;
+        }
+        ol {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, minmax(24px, auto));
+            grid-auto-rows: minmax(24px, auto);
+            gap: 16px;
+            li {
+                list-style-position: inside;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: $text;
+            }
+        }
+    }
+    &__add {
+        margin-bottom: 40px;
+        form {
+            display: flex;
+        }
+        .input {
+            margin-right: 24px;
+        }
+    }
+    &__ok {
+        display: flex;
+        width: 100%;
+        padding: 30px 36px;
+        box-shadow: 0px 10px 40px rgba(12, 12, 12, 0.1);
+        border-radius: 20px;
+        .button {
+            margin-right: 10px;
+        }
+    }
+}

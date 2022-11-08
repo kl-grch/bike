@@ -1,0 +1,17 @@
+.tabs {
+    padding: 20px 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 150%;
+    border-radius: 20px 20px 0px 0px;
+    background-color: $grey;
+    color: $main;
+    cursor: pointer;
+    &__active {
+        background-color: $white;
+        color: $blue;
+    }
+
+    
+}

@@ -1,0 +1,30 @@
+.button {
+    padding: 14px 24px;
+    border-radius: 16px;
+    border: none;
+    background: $blue;
+    color: $white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    cursor: pointer;
+    &:hover {
+        background: #2C1A9A;
+    }
+    &:active {
+        background: #1F1368;
+    }
+    &_white {
+        background: $white;
+        color: $main;
+        &:hover {
+            background: $white;
+            color: #2C1A9A;
+        }
+        &:active {
+            background: $white;
+            color: #1F1368;
+        }
+    }
+}

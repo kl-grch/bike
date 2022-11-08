@@ -1,0 +1,19 @@
+.input {
+        display: block;
+        padding: 14px 16px;
+        border: 1px solid #D9D9D9;
+        border-radius: 16px;
+        width: 351px;
+        color: $main;
+        &::placeholder {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: $grey;    
+        }
+        &:focus {
+            border: 1px solid $blue;
+        }
+    
+}
